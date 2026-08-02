@@ -1,0 +1,8 @@
+.idea/
+.venv/
+.venv/
+model/
+scam_model/
+.venv/
+*.safetensors
+*.bin
