@@ -9,7 +9,8 @@ Over **40 billion dollars** has been lost to scams in the United States alone, w
 - Test users on over 50 emails and voice messages to identify scam from legitimate scenarios. 
   - Users learn pattern recognition as they test themselves
 - Users can send their own emails/texts to the app where a ML model and common flags detect whether the message is legitimate
-  - **Streaks 🔥**: Come back every day to increase your streak and gain XP every solve
+- **Streaks 🔥**: Come back every day to increase your streak and gain XP every solve
+- Do daily/weekly/monthly challenges to unlock achievements
 ---
 ### Tech Stack:
 
