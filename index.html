@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScamGuard Senior - Cybersecurity Training</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon">🛡️</span>
+        <span class="brand-name">ScamGuard Senior</span>
+      </div>
+      <nav class="header-nav">
+        <button class="nav-link active" data-view="quiz">Quiz</button>
+        <button class="nav-link" data-view="analyzer">Text Analyzer</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- QUIZ VIEW -->
+    <section id="quiz-view" class="view">
+
+      <div class="intro">
+        <h1>Spot the Scam</h1>
+        <p>Read or listen to each message, then decide if it's a scam or safe. Learn why afterward.</p>
+      </div>
+
+      <div class="scoreboard">
+        <div class="score-item">
+          <span class="score-label">Score</span>
+          <span class="score-value" id="score-value">0</span>
+        </div>
+        <div class="score-item">
+          <span class="score-label">Question</span>
+          <span class="score-value"><span id="question-num">0</span> / <span id="question-total">0</span></span>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <div id="loading-state" class="card loading-card">
+        <p>Loading scenarios&hellip;</p>
+      </div>
+
+      <div id="quiz-card" class="card quiz-card hidden">
+        <div class="card-badge" id="scenario-type-badge">TEXT</div>
+        <h2 id="scenario-title">Title</h2>
+        <p class="sender-line">From: <span id="scenario-sender">Sender</span></p>
+
+        <div id="text-content" class="message-bubble hidden">
+          <p id="scenario-text"></p>
+        </div>
+
+        <div id="voice-content" class="voice-bubble hidden">
+          <button id="play-voice-btn" class="btn btn-voice">🔈 Listen to Voice Call</button>
+          <p class="voice-hint">Tap to hear the message read aloud.</p>
+        </div>
+
+        <div class="decision-row">
+          <p class="decision-prompt">What should you do?</p>
+          <div class="decision-buttons">
+            <button id="btn-scam" class="btn btn-scam">🚨 It's a Scam</button>
+            <button id="btn-safe" class="btn btn-safe">✅ It's Safe</button>
+          </div>
+        </div>
+
+        <div id="result-panel" class="result-panel hidden">
+          <p id="result-headline" class="result-headline"></p>
+          <p id="result-encouragement" class="encouragement-text"></p>
+          <p class="explain-label">Explanation</p>
+          <p id="result-explanation" class="explain-text"></p>
+          <button id="btn-next" class="btn btn-primary">Next Question &rarr;</button>
+        </div>
+      </div>
+
+      <div id="complete-card" class="card complete-card hidden">
+        <h2>Training Complete!</h2>
+        <p id="final-score-text"></p>
+        <button id="btn-restart" class="btn btn-primary">Play Again</button>
+      </div>
+
+      <div id="error-state" class="card error-card hidden">
+        <p>Couldn't reach the ScamGuard server. Make sure the backend is running at
+          <code id="api-base-display"></code> and reload this page.</p>
+        <button id="btn-retry" class="btn btn-primary">Retry</button>
+      </div>
+    </section>
+
+    <!-- ANALYZER VIEW -->
+    <section id="analyzer-view" class="view hidden">
+      <div class="intro">
+        <h1>Custom Text Analyzer</h1>
+        <p>Paste a suspicious text message or email and check it for common scam warning signs.</p>
+      </div>
+
+      <div class="card analyzer-card">
+        <label for="analyzer-input" class="analyzer-label">Message to analyze</label>
+        <textarea id="analyzer-input" rows="6" placeholder="Paste the message text here..."></textarea>
+        <button id="btn-analyze" class="btn btn-primary">Analyze Message</button>
+
+        <div id="analyzer-result" class="analyzer-result hidden">
+          <div class="risk-badge" id="risk-badge">Risk Level</div>
+          <p class="explain-label">Summary</p>
+          <p id="analyzer-explanation" class="explain-text"></p>
+          <div id="flags-section" class="flags-section hidden">
+            <p class="explain-label">Red Flags Found</p>
+            <ul id="flags-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built to help older adults recognize and avoid common scams.</p>
+  </footer>
+
+  <script src="accessibility.js"></script>
+  <script src="gamification.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
