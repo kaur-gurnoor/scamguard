@@ -51,7 +51,7 @@ ALL_SCENARIOS = [
     },
     {
         "id": 5,
-        "title": "Legitimate Verification Code Text",
+        "title": "Verification Code Text",
         "type": "text",
         "sender": "Netflix Auth",
         "content": "Your secure verification code for logging into Netflix is 482901. This code expires in 10 minutes. If you did not request this, you can safely ignore this text message.",
@@ -60,7 +60,7 @@ ALL_SCENARIOS = [
     },
     {
         "id": 6,
-        "title": "Legitimate Shipment Update",
+        "title": "Shipment Update",
         "type": "text",
         "sender": "Amazon Logistics",
         "content": "Hi John, your Amazon order #114-829371 has been delivered to your front door. Track or view details: https://www.amazon.com/gp/your-account/order-history",
@@ -78,7 +78,7 @@ ALL_SCENARIOS = [
     },
     {
         "id": 8,
-        "title": "Unsolicited Prize Winner Text",
+        "title": "Prize Winner Text",
         "type": "text",
         "sender": "Winner Notification",
         "content": "CONGRATS! You have been selected as the 1st place winner of our daily giveaway: a brand new iPad Pro! Claim your prize here before midnight: https://claim-ipad-now-free.org/win",
@@ -87,7 +87,7 @@ ALL_SCENARIOS = [
     },
     {
         "id": 9,
-        "title": "Legitimate Prescription Reminder",
+        "title": "Prescription Reminder",
         "type": "text",
         "sender": "CVS Pharmacy",
         "content": "CVS Pharmacy: Your prescription RX#94821 is ready for pickup at Main St branch. Reply 1 to auto-refill or CALL store directly for questions.",
@@ -96,7 +96,7 @@ ALL_SCENARIOS = [
     },
     {
         "id": 10,
-        "title": "Fake Bank Wire Transfer Call",
+        "title": "Bank Wire Transfer Call",
         "type": "voice",
         "sender": "Wells Fargo Fraud Unit",
         "content": "This is Wells Fargo Fraud Prevention. Someone is currently attempting to transfer $2,500 out of your account. To stop this transaction, tell me the 6-digit passcode we just sent to your mobile phone number.",
@@ -105,7 +105,7 @@ ALL_SCENARIOS = [
     },
     {
         "id": 11,
-        "title": "Legitimate Appointment Reminder",
+        "title": "Appointment Reminder",
         "type": "text",
         "sender": "Dr. Smith Dental",
         "content": "Reminder: You have an upcoming appointment with Dr. Smith tomorrow at 2:30 PM. Reply C to confirm or call 555-0192 to reschedule.",
@@ -114,7 +114,7 @@ ALL_SCENARIOS = [
     },
     {
         "id": 12,
-        "title": "Wrong Number Relationship Scam",
+        "title": "Wrong Number",
         "type": "text",
         "sender": "Unknown (+1-802-555-0143)",
         "content": "Hi David! Are we still meeting for lunch at the country club tomorrow? Oh sorry, is this not David? Well, nice meeting you anyway! I am Sarah.",
