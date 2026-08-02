@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "title": "AI Voice Call: Grandchild Emergency",
+    "type": "voice",
+    "sender": "Unknown Number",
+    "content": "Grandma, it's me! I got into a bad car accident and I'm in jail. The police say I need $5,000 for bail right now. Please don't tell mom and dad. Send the money through Bitcoin or a wire transfer quickly!",
+    "is_scam": true,
+    "explanation": "Scammers use AI voice cloning from social media clips. Police and government agencies never ask for Bitcoin or wire transfers."
+  },
+  {
+    "id": 2,
+    "title": "USPS Package Delivery Failure",
+    "type": "text",
+    "sender": "USPS-Notification-Alert",
+    "content": "USPS Notice: Your package could not be delivered due to an incomplete address. Please update your address and pay a $1.50 redelivery fee within 24 hours: https://usps-redelivery-postage.com",
+    "is_scam": true,
+    "explanation": "Look closely at the link address! Official postal links end in 'usps.com', not fake domains like 'usps-redelivery-postage.com'."
+  },
+  {
+    "id": 3,
+    "title": "Tech Support Virus Warning Call",
+    "type": "voice",
+    "sender": "Microsoft Security Agent",
+    "content": "Hello, this is Microsoft Security Center calling. We detected a dangerous Trojan virus on your computer that is stealing your bank details. Please go to your computer immediately and download AnyDesk so we can fix it.",
+    "is_scam": true,
+    "explanation": "Companies like Microsoft or Apple will NEVER call you out of nowhere to fix your computer or request remote desktop access."
+  },
+  {
+    "id": 4,
+    "title": "Bank Account Fraud Alert",
+    "type": "text",
+    "sender": "Chase Security Alert",
+    "content": "CHASE ALERT: Urgent security notification. We detected suspicious activity of $482.91 at Walmart on your debit card. If this wasn't you, verify identity now: https://bit.ly/chase-secure-auth-392",
+    "is_scam": true,
+    "explanation": "Banks do not send shortened links like bit.ly in text messages. Always call the number on the back of your official debit card."
+  },
+  {
+    "id": 5,
+    "title": "Verification Code Text",
+    "type": "text",
+    "sender": "Netflix Auth",
+    "content": "Your secure verification code for logging into Netflix is 482901. This code expires in 10 minutes. If you did not request this, you can safely ignore this text message.",
+    "is_scam": false,
+    "explanation": "This is a legitimate 2FA verification code. It does not ask you to click external links or send money."
+  },
+  {
+    "id": 6,
+    "title": "Shipment Update",
+    "type": "text",
+    "sender": "Amazon Logistics",
+    "content": "Hi John, your Amazon order #114-829371 has been delivered to your front door. Track or view details: https://www.amazon.com/gp/your-account/order-history",
+    "is_scam": false,
+    "explanation": "This is a legitimate delivery update pointing directly to the official, secure domain (amazon.com)."
+  },
+  {
+    "id": 7,
+    "title": "IRS Tax Penalty Threat Call",
+    "type": "voice",
+    "sender": "Internal Revenue Service",
+    "content": "This is an urgent notice from the Internal Revenue Service. You have unpaid taxes of $3,210. A warrant has been issued for your arrest. To resolve this immediately and cancel the police dispatch, purchase Target gift cards and read the numbers on the back.",
+    "is_scam": true,
+    "explanation": "The IRS will never demand immediate payment over the phone, demand gift cards, or threaten instant arrest."
+  },
+  {
+    "id": 8,
+    "title": "Prize Winner Text",
+    "type": "text",
+    "sender": "Winner Notification",
+    "content": "CONGRATS! You have been selected as the 1st place winner of our daily giveaway: a brand new iPad Pro! Claim your prize here before midnight: https://claim-ipad-now-free.org/win",
+    "is_scam": true,
+    "explanation": "You cannot win a contest or giveaway that you never entered. These links trick you into entering credit card details for 'shipping fees'."
+  },
+  {
+    "id": 9,
+    "title": "Prescription Reminder",
+    "type": "text",
+    "sender": "CVS Pharmacy",
+    "content": "CVS Pharmacy: Your prescription RX#94821 is ready for pickup at Main St branch. Reply 1 to auto-refill or CALL store directly for questions.",
+    "is_scam": false,
+    "explanation": "Standard automated pharmacy notice. It gives actionable options without requiring suspicious web links."
+  },
+  {
+    "id": 10,
+    "title": "Bank Wire Transfer Call",
+    "type": "voice",
+    "sender": "Wells Fargo Fraud Unit",
+    "content": "This is Wells Fargo Fraud Prevention. Someone is currently attempting to transfer $2,500 out of your account. To stop this transaction, tell me the 6-digit passcode we just sent to your mobile phone number.",
+    "is_scam": true,
+    "explanation": "Scammers trigger a real password reset on your account and trick you into reading them the one-time passcode so they can log in!"
+  },
+  {
+    "id": 11,
+    "title": "Appointment Reminder",
+    "type": "text",
+    "sender": "Dr. Smith Dental",
+    "content": "Reminder: You have an upcoming appointment with Dr. Smith tomorrow at 2:30 PM. Reply C to confirm or call 555-0192 to reschedule.",
+    "is_scam": false,
+    "explanation": "Normal SMS appointment reminder with standard text commands."
+  },
+  {
+    "id": 12,
+    "title": "Wrong Number",
+    "type": "text",
+    "sender": "Unknown (+1-802-555-0143)",
+    "content": "Hi David! Are we still meeting for lunch at the country club tomorrow? Oh sorry, is this not David? Well, nice meeting you anyway! I am Sarah.",
+    "is_scam": true,
+    "explanation": "This is a classic 'Pig Butchering' or wrong number scam. Scammers pretend it was an innocent accident to build trust before pitching crypto investments."
+  },
+  {
+    "id": 13,
+    "title": "Geek Squad Subscription Renewal Invoice",
+    "type": "text",
+    "sender": "GeekSquad Billing",
+    "content": "Geek Squad Auto-Renewal: $499.99 has been charged to your card for annual total tech protection. If you did not authorize this charge, call refund support immediately at 1-800-555-0199.",
+    "is_scam": true,
+    "explanation": "Scammers send fake invoice charges to induce panic so you call their fake call center, where they trick you into remote computer access."
+  },
+  {
+    "id": 14,
+    "title": "Airline Flight Gate Change Notice",
+    "type": "text",
+    "sender": "Delta Air Lines",
+    "content": "Delta Alert: Flight DL1482 to Chicago O'Hare now departing from Gate B12 at 4:15 PM. Check status in Delta mobile app.",
+    "is_scam": false,
+    "explanation": "Legitimate flight notification providing clear travel updates without asking for sensitive personal or payment details."
+  },
+  {
+    "id": 15,
+    "title": "Electric Utility Shutoff Call",
+    "type": "voice",
+    "sender": "City Power & Light Disconnect Dept",
+    "content": "This is an urgent notice from City Power and Light. Your electricity account is past due by $310. Technicians are en route to shut off your power in 30 minutes unless you pay over the phone right now using a Zelle or prepaid Visa card.",
+    "is_scam": true,
+    "explanation": "Utility companies send formal mail notices before power disconnects and will never demand immediate payment via Zelle or prepaid cards over the phone."
+  },
+  {
+    "id": 16,
+    "title": "Remote Work HR Job Offer",
+    "type": "text",
+    "sender": "Global HR Recruiter",
+    "content": "Congratulations! Your resume was selected for a remote Data Entry position paying $45/hour. No experience required. To secure your spot, purchase home office equipment via wire transfer using our approved vendor list.",
+    "is_scam": true,
+    "explanation": "Legitimate employers never ask prospective employees to wire money or buy equipment from specific vendors upfront."
+  },
+  {
+    "id": 17,
+    "title": "Google Security Alert",
+    "type": "text",
+    "sender": "Google Security",
+    "content": "Google Security Alert: A new sign-in was detected on a Mac device in Seattle, WA. If this was you, no action is needed. Review activity at https://myaccount.google.com/notifications",
+    "is_scam": false,
+    "explanation": "Official security notification pointing directly to the official google.com domain."
+  },
+  {
+    "id": 18,
+    "title": "Unpaid Toll Road Fine Alert",
+    "type": "text",
+    "sender": "E-ZPass Toll Services",
+    "content": "Toll Notice: You have an unpaid toll invoice of $4.25 from recent highway travel. Final notice before a $50 late penalty is added. Pay online immediately: https://ezpass-toll-settlement-pay.com",
+    "is_scam": true,
+    "explanation": "Smishing scam! Look closely at the fake link (ezpass-toll-settlement-pay.com) instead of the official state toll portal."
+  },
+  {
+    "id": 19,
+    "title": "Credit Card Cash Back Bonus",
+    "type": "text",
+    "sender": "Cardmember Rewards",
+    "content": "You have $184.20 in unclaimed cashback rewards expiring tonight! Click to transfer funds straight to your checking account: https://rewards-cash-payout.net",
+    "is_scam": true,
+    "explanation": "Banks allow you to claim rewards inside their official mobile app or online banking portal, never via suspicious third-party links."
+  },
+  {
+    "id": 20,
+    "title": "Doctor Office Test Results",
+    "type": "text",
+    "sender": "MyChart Medical Portal",
+    "content": "You have a new message and lab result available in your MyChart patient portal. Log in to your hospital portal or mobile app to view.",
+    "is_scam": false,
+    "explanation": "Standard notification directing you to log into your official patient portal without embedding external phishing links."
+  },
+  {
+    "id": 21,
+    "title": "Social Security Number Suspension Call",
+    "type": "voice",
+    "sender": "Social Security Administration",
+    "content": "Warning: Your Social Security Number has been suspended due to illegal drug trafficking activity connected to your name in Texas. Press 1 immediately to speak to an agent before a legal warrant is executed.",
+    "is_scam": true,
+    "explanation": "Social Security Numbers are NEVER suspended. The SSA will never call threatening arrest or demanding immediate phone resolution."
+  },
+  {
+    "id": 22,
+    "title": "Library Book Overdue Notice",
+    "type": "text",
+    "sender": "City Public Library",
+    "content": "Library Notice: 'The Great Gatsby' was due yesterday. Please return it to the book drop or renew your loan online at citylibrary.org.",
+    "is_scam": false,
+    "explanation": "Informational library reminder pointing to official public domain."
+  },
+  {
+    "id": 23,
+    "title": "Amazon Refund Customer Support Call",
+    "type": "voice",
+    "sender": "Amazon Customer Care",
+    "content": "Hello, we are calling from Amazon. An order for a MacBook Pro ($1,299) was placed on your account. If you did not buy this, press 1 to connect with our refund department so we can deposit the money back into your bank account.",
+    "is_scam": true,
+    "explanation": "Amazon does not call customers about orders or demand phone access to process refunds."
+  },
+  {
+    "id": 24,
+    "title": "PayPal Payment Receipt Confirmation",
+    "type": "text",
+    "sender": "PayPal Service",
+    "content": "You sent $25.00 USD to Coffee Roasters LLC. Transaction ID: 89410294. View your receipt details by logging into paypal.com.",
+    "is_scam": false,
+    "explanation": "Standard payment receipt from PayPal."
+  },
+  {
+    "id": 25,
+    "title": "Crypto Investment Opportunity Call",
+    "type": "voice",
+    "sender": "Financial Wealth Advisory",
+    "content": "Hello! I am a senior financial analyst calling to offer an exclusive guaranteed 300% return on crypto trading. Deposit $500 today on our AI trading platform and watch your money double in 48 hours.",
+    "is_scam": true,
+    "explanation": "Guaranteed high returns do not exist. Any cold call promising risk-free high crypto returns is a scam."
+  },
+  {
+    "id": 26,
+    "title": "Car Warranty Expiration Warning Call",
+    "type": "voice",
+    "sender": "Vehicle Protection Center",
+    "content": "This is your final notice regarding your vehicle's factory warranty. Our records indicate your coverage has expired. Press 1 now to extend your bumper-to-bumper warranty before you are liable for costly repairs.",
+    "is_scam": true,
+    "explanation": "Robocall scam harvesting credit card numbers under the guise of fake auto warranty renewals."
+  },
+  {
+    "id": 27,
+    "title": "Hotel Reservation Confirmation Text",
+    "type": "text",
+    "sender": "Marriott Bonvoy",
+    "content": "Your reservation #948210 for Marriott Downtown (Check-in: Oct 14) is confirmed. View reservation details in the Marriott app.",
+    "is_scam": false,
+    "explanation": "Legitimate hotel confirmation notice."
+  },
+  {
+    "id": 28,
+    "title": "Urgent CEO Gift Card Request Email/Text",
+    "type": "text",
+    "sender": "CEO (Mark Johnson)",
+    "content": "Hi, I am in a client meeting right now and cannot take calls. I need you to discreetly buy 5 Apple gift cards of $100 each for a client gift. Send me pictures of the redemption codes right away.",
+    "is_scam": true,
+    "explanation": "Classic Business Email Compromise (BEC) scam impersonating executives to steal gift cards."
+  },
+  {
+    "id": 29,
+    "title": "School Weather Closure Notice",
+    "type": "text",
+    "sender": "County School District",
+    "content": "District Alert: All schools will be closed tomorrow, Friday Dec 8th, due to severe winter weather warnings. Stay safe!",
+    "is_scam": false,
+    "explanation": "Standard public school weather alert."
+  },
+  {
+    "id": 30,
+    "title": "Parking Meter QR Code Payment",
+    "type": "text",
+    "sender": "City Parking Payment",
+    "content": "Parking Session Expiring: Pay $2.00 to extend your parking meter session by 1 hour now: https://city-park-meter-pay.quick-link.biz",
+    "is_scam": true,
+    "explanation": "Scammers place fake stickers with QR codes or links on parking meters that redirect to fraud payment sites."
+  },
+  {
+    "id": 31,
+    "title": "Apple ID Security Lock Alert",
+    "type": "text",
+    "sender": "Apple Security Notice",
+    "content": "Apple Alert: Your Apple ID has been locked due to unauthorized login attempts. Verify your payment info within 12 hours to prevent account deletion: https://appleid-verification-icloud-login.net",
+    "is_scam": true,
+    "explanation": "Apple will never threaten to delete your account via text or link you to fake domains like 'appleid-verification-icloud-login.net'."
+  },
+  {
+    "id": 32,
+    "title": "Utilities Refund Check Call",
+    "type": "voice",
+    "sender": "Electric Utility Billing",
+    "content": "Hello, we are calling to inform you that you overpaid your electric bill by $145.00 last month. To receive your refund check immediately, please verify your bank routing and account number over the phone.",
+    "is_scam": true,
+    "explanation": "Utility companies issue statement credits or send physical refund checks. They never ask for bank account numbers over the phone."
+  },
+  {
+    "id": 33,
+    "title": "Uber Driver Arrival & Trip Receipt",
+    "type": "text",
+    "sender": "Uber",
+    "content": "Your Uber driver Alex (Toyota Camry, License #7ABC12) has arrived. Track trip details in the Uber app.",
+    "is_scam": false,
+    "explanation": "Standard ride-hailing notification directing you to use the official mobile app."
+  },
+  {
+    "id": 34,
+    "title": "Jury Duty Warrant Arrest Threat Call",
+    "type": "voice",
+    "sender": "County Sheriff Department",
+    "content": "This is Officer Miller from the Sheriff Department. You failed to report for Jury Duty this morning. A judge has signed a warrant for your arrest. You must pay a $750 contempt fee via Bitcoin ATM to dismiss the warrant.",
+    "is_scam": true,
+    "explanation": "Police departments will never demand Bitcoin ATM payments or threaten instant arrest over missed jury duty."
+  },
+  {
+    "id": 35,
+    "title": "Credit Card Transaction Fraud Response SMS",
+    "type": "text",
+    "sender": "Citi Fraud Alert",
+    "content": "Citi Fraud Alert: Did you spend $89.50 at Target on card ending in 4102? Reply YES if recognized, or NO to block card.",
+    "is_scam": false,
+    "explanation": "Legitimate SMS fraud check. It only asks for a simple YES/NO reply without asking for personal information or web links."
+  },
+  {
+    "id": 36,
+    "title": "Student Loan Debt Forgiveness Phone Call",
+    "type": "voice",
+    "sender": "National Student Loan Center",
+    "content": "Great news! Under new federal legislation, your student loans have been qualified for 100% debt cancellation. Press 1 now and pay a processing fee of $250 to clear your balance.",
+    "is_scam": true,
+    "explanation": "Federal loan forgiveness programs are free to apply for via StudentAid.gov. Never pay processing fees over the phone."
+  },
+  {
+    "id": 37,
+    "title": "Cell Phone Network Tower Outage Notice",
+    "type": "text",
+    "sender": "Verizon Wireless",
+    "content": "Verizon Notice: Maintenance on local cell towers near your area may cause brief signal interruption between 2 AM and 4 AM tonight.",
+    "is_scam": false,
+    "explanation": "Standard service announcement that requires no action or financial details."
+  },
+  {
+    "id": 38,
+    "title": "Facebook Account Recovery Phishing Code",
+    "type": "text",
+    "sender": "Meta Security Alert",
+    "content": "Meta Notice: Someone requested a password reset for your Facebook account. Click link to confirm it was you or change password: https://facebook-account-recovery-meta.com",
+    "is_scam": true,
+    "explanation": "Pay attention to the web link! Official Meta pages use facebook.com or meta.com, not 'facebook-account-recovery-meta.com'."
+  },
+  {
+    "id": 39,
+    "title": "DoorDash Food Delivery Arrival",
+    "type": "text",
+    "sender": "DoorDash",
+    "content": "Hi! Your Dasher Maria has dropped off your food order at your front doorstep. Enjoy your meal!",
+    "is_scam": false,
+    "explanation": "Normal automated food delivery notification."
+  },
+  {
+    "id": 40,
+    "title": "Fake Disaster Relief Fund Charity Call",
+    "type": "voice",
+    "sender": "Hurricane Relief Charity",
+    "content": "Hello, we are calling on behalf of the Global Hurricane Emergency Relief Fund. Victims urgently need food and water. Donate $100 right now by reading your credit card details to our volunteer.",
+    "is_scam": true,
+    "explanation": "Scammers exploit natural disasters. Always donate directly through verified non-profit websites (e.g. RedCross.org)."
+  },
+  {
+    "id": 41,
+    "title": "Monthly Bank Statement Ready Email/Text",
+    "type": "text",
+    "sender": "Bank of America",
+    "content": "Bank of America: Your electronic bank statement for July is now available. Log in to Online Banking at bankofamerica.com to view.",
+    "is_scam": false,
+    "explanation": "Legitimate banking alert pointing directly to bankofamerica.com."
+  },
+  {
+    "id": 42,
+    "title": "Tech Support Browser Popup Lockout Call",
+    "type": "voice",
+    "sender": "Windows Help Desk",
+    "content": "Warning! Your computer screen has been locked due to illegal spyware activity. Do not restart your PC. Call our toll-free hotline 1-888-555-0144 immediately to unlock your system.",
+    "is_scam": true,
+    "explanation": "Fake browser popups trick users into calling scam call centers. Windows does not lock your computer screen with phone numbers to call."
+  },
+  {
+    "id": 43,
+    "title": "Veterinary Clinic Vaccination Reminder",
+    "type": "text",
+    "sender": "Valley Animal Hospital",
+    "content": "Reminder: Buddy is due for annual Rabies and Distemper vaccinations this month. Call 555-0177 to schedule an appointment.",
+    "is_scam": false,
+    "explanation": "Standard veterinary clinic reminder with local contact info."
+  },
+  {
+    "id": 44,
+    "title": "Crypto Airdrop Token Giveaway SMS",
+    "type": "text",
+    "sender": "Binance Rewards",
+    "content": "Binance Event: You received 500 USDT ($500) in our community airdrop! Connect your crypto wallet to claim: https://binance-airdrop-claim-wallet.org",
+    "is_scam": true,
+    "explanation": "Wallet-draining scam! Connecting your crypto wallet to unverified third-party sites gives scammers full control of your funds."
+  },
+  {
+    "id": 45,
+    "title": "Public Transit Card Pass Auto-Reload",
+    "type": "text",
+    "sender": "Metro Transit",
+    "content": "Metro Pass Alert: Auto-reload successful. $20.00 loaded onto Transit Card #9410. Current balance: $34.50.",
+    "is_scam": false,
+    "explanation": "Routine public transport automated confirmation."
+  },
+  {
+    "id": 46,
+    "title": "Medicare Insurance Claim Overpayment Rebate",
+    "type": "voice",
+    "sender": "Medicare Rebate Center",
+    "content": "This is Medicare calling with an important update. You are eligible for a $400 health rebate check and a free back brace under new medical benefits. Please state your Medicare card number and birth date to confirm.",
+    "is_scam": true,
+    "explanation": "Medicare never calls beneficiaries out of the blue asking for Medicare numbers or offering free medical supplies."
+  },
+  {
+    "id": 47,
+    "title": "Hardware Store Order Ready for Pickup",
+    "type": "text",
+    "sender": "Home Depot",
+    "content": "Home Depot: Order #W849201 is ready for store pickup at Customer Service Desk. Bring photo ID and confirmation code 4829.",
+    "is_scam": false,
+    "explanation": "Standard retail pickup notice."
+  },
+  {
+    "id": 48,
+    "title": "Unclaimed Family Inheritance Email/Text",
+    "type": "text",
+    "sender": "Barrister Robert Barrister",
+    "content": "Greetings, I am a legal representative handling the estate of a late relative who shared your last name, leaving $4.5 Million USD. Contact me at law-chamber@mail.com to process your inheritance.",
+    "is_scam": true,
+    "explanation": "Classic 'Nigerian Prince' or advance-fee inheritance scam. Estate lawyers do not contact heirs via random text or free webmail accounts."
+  },
+  {
+    "id": 49,
+    "title": "Calendar Meeting Invitation Notice",
+    "type": "text",
+    "sender": "Google Calendar",
+    "content": "Notification: 'Weekly Team Sync' starting in 10 minutes (10:00 AM - 10:30 AM). Open Google Calendar app to join video call.",
+    "is_scam": false,
+    "explanation": "Standard calendar reminder notification."
+  },
+  {
+    "id": 50,
+    "title": "Home Security Alarm Low Battery Alert",
+    "type": "text",
+    "sender": "ADT Security",
+    "content": "ADT Alert: Back Door Motion Sensor has a low battery (15%). Please replace CR123A battery soon to keep alarm system fully active.",
+    "is_scam": false,
+    "explanation": "Routine smart home system diagnostic message."
+  }
+]

@@ -26,16 +26,16 @@ const Gamification = (() => {
   ];
 
   const BADGES = [
-    { id: "first_steps", name: "First Steps", icon: "\u{1F423}", desc: "Answer your first question.", check: (s) => s.stats.questionsAnswered >= 1 },
-    { id: "quiz_champion", name: "Quiz Champion", icon: "\u{1F3C6}", desc: "Complete a full quiz round.", check: (s) => s.stats.quizzesCompleted >= 1 },
-    { id: "perfect_round", name: "Perfect Round", icon: "\u{1F31F}", desc: "Get every question right in a round.", check: (s) => s.stats.perfectRounds >= 1 },
-    { id: "sharp_eye", name: "Sharp Eye", icon: "\u{1F575}️", desc: "Get 20 correct answers total.", check: (s) => s.stats.correctAnswers >= 20 },
-    { id: "dedicated_learner", name: "Dedicated Learner", icon: "\u{1F4DA}", desc: "Answer 50 questions total.", check: (s) => s.stats.questionsAnswered >= 50 },
-    { id: "scam_sleuth", name: "Scam Sleuth", icon: "\u{1F50D}", desc: "Use the Text Analyzer 10 times.", check: (s) => s.stats.analyzerUses >= 10 },
-    { id: "week_warrior", name: "Week Warrior", icon: "\u{1F525}", desc: "Reach a 7-day streak.", check: (s) => s.streak.longest >= 7 },
-    { id: "month_master", name: "Month Master", icon: "\u{1F5D3}️", desc: "Reach a 30-day streak.", check: (s) => s.streak.longest >= 30 },
-    { id: "century_club", name: "Century Club", icon: "\u{1F4AF}", desc: "Earn 100 total XP.", check: (s) => s.xp >= 100 },
-    { id: "high_roller", name: "High Roller", icon: "\u{1F48E}", desc: "Earn 500 total XP.", check: (s) => s.xp >= 500 },
+    { id: "first_steps", name: "First Steps", icon: "🐣", desc: "Answer your first question.", check: (s) => s.stats.questionsAnswered >= 1 },
+    { id: "quiz_champion", name: "Quiz Champion", icon: "🏆", desc: "Complete a full quiz round.", check: (s) => s.stats.quizzesCompleted >= 1 },
+    { id: "perfect_round", name: "Perfect Round", icon: "🌟", desc: "Get every question right in a round.", check: (s) => s.stats.perfectRounds >= 1 },
+    { id: "sharp_eye", name: "Sharp Eye", icon: "🕵️", desc: "Get 20 correct answers total.", check: (s) => s.stats.correctAnswers >= 20 },
+    { id: "dedicated_learner", name: "Dedicated Learner", icon: "📚", desc: "Answer 50 questions total.", check: (s) => s.stats.questionsAnswered >= 50 },
+    { id: "scam_sleuth", name: "Scam Sleuth", icon: "🔍", desc: "Use the Text Analyzer 10 times.", check: (s) => s.stats.analyzerUses >= 10 },
+    { id: "week_warrior", name: "Week Warrior", icon: "🔥", desc: "Reach a 7-day streak.", check: (s) => s.streak.longest >= 7 },
+    { id: "month_master", name: "Month Master", icon: "🗓️", desc: "Reach a 30-day streak.", check: (s) => s.streak.longest >= 30 },
+    { id: "century_club", name: "Century Club", icon: "💯", desc: "Earn 100 total XP.", check: (s) => s.xp >= 100 },
+    { id: "high_roller", name: "High Roller", icon: "💎", desc: "Earn 500 total XP.", check: (s) => s.xp >= 500 },
     { id: "rising_star", name: "Rising Star", icon: "⭐", desc: "Reach Level 5.", check: (s) => getLevel(s.xp).level >= 5 },
   ];
 
@@ -82,6 +82,7 @@ const Gamification = (() => {
   });
 
   let state = defaultState();
+  load();
 
   // ---- Persistence ----
   function load() {
@@ -98,6 +99,7 @@ const Gamification = (() => {
           monthly: { ...defaultState().challenges.monthly, ...((parsed.challenges || {}).monthly || {}) },
         };
         state.goal = { ...defaultState().goal, ...(parsed.goal || {}) };
+        state.plant = { ...defaultState().plant, ...(parsed.plant || {}) };
       }
     } catch (e) {
       state = defaultState();
@@ -114,10 +116,15 @@ const Gamification = (() => {
 
   // ---- Date helpers ----
   function dayKey(d) {
-    return d.toISOString().slice(0, 10);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
   }
   function monthKey(d) {
-    return d.toISOString().slice(0, 7);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, "0");
+    return `${year}-${month}`;
   }
   function weekKey(d) {
     const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
